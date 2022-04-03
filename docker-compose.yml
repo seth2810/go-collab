@@ -1,0 +1,16 @@
+version: "3"
+services:
+  frontend:
+    build:
+      context: frontend
+      dockerfile: .docker/Dockerfile
+    ports:
+      - "8080:80"
+  backend:
+    build:
+      context: backend
+      dockerfile: .docker/Dockerfile
+    environment:
+      LOG_LEVEL: debug
+    ports:
+      - "8000:8000"

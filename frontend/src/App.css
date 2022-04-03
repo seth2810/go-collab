@@ -1,0 +1,10 @@
+.container {
+    margin: auto;
+    width: 8.5in;
+}
+
+.ql-editor {
+    min-height: 11in;
+    padding: 0.5in;
+    margin: 1rem;
+}
